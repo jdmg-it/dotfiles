@@ -140,8 +140,13 @@ return {
 					},
 				})
 			end,
+			["pyright"] = function()
+				lspconfig["pyright"].setup({
+					capabilities = capabilities,
+				})
+			end,
 		})
-	  
+
 		mason_lspconfig.setup({
 			lazy = false,
 			opts = {
@@ -160,7 +165,6 @@ return {
 				"prismals",
 				"pyright",
 			},
-	})
-
-  end,
+		})
+	end,
 }

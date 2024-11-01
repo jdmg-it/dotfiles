@@ -3,11 +3,16 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
+# BAT
+alias cat='bat'
+
+# LSD
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
+alias lta='ls -a --tree'
 
 # PHP ARTISAN
 alias pas='php artisan serve'
