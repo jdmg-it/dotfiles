@@ -9,7 +9,7 @@ esac
 
 eval "$(fnm env --use-on-cd)"
 eval "$(pyenv init --path)"
-
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 # Set up fzf key bindings and fuzzy completion
