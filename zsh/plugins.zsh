@@ -11,6 +11,7 @@ plugins=(
   git
 	extract
 	history
+  docker
 	npm
 	pip
 	python
