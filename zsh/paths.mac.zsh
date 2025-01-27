@@ -1,3 +1,4 @@
+# windows manager
 WM_VAR="/$ZELLIJ"
 WM_CMD="zellij"
 
@@ -19,18 +20,29 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
 
+# fnm
 eval "$(fnm env --use-on-cd)"
+
+# pyenv
 eval "$(pyenv init --path)"
+
+# starship
 eval "$(starship init zsh)"
 
+# carapace
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
 
+# fzf
 eval "$(fzf --zsh)"
+
+# zoxide
 eval "$(zoxide init zsh)"
+
+# atuin
 eval "$(atuin init zsh)"
 
+# launch zellij
 start_if_needed
