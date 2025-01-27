@@ -8,12 +8,14 @@ ZSH_DISABLE_COMPFIX="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
+  git
 	extract
 	history
 	npm
 	pip
 	python
+  command-not-found
+  zsh-autocomplete
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	colored-man-pages

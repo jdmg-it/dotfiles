@@ -21,3 +21,8 @@ alias punit='php vendor/phpunit/phpunit/phpunit'
 
 # NODE
 alias nrd='npm run dev'
+
+# FZF
+alias fbat='fzf --preview="bat --color=always {}"'
+alias fnvim='nvim $(fzf --preview="bat --color=always {}")'
+
