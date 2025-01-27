@@ -26,3 +26,5 @@ alias nrd='npm run dev'
 alias fbat='fzf --preview="bat --color=always {}"'
 alias fnvim='nvim $(fzf --preview="bat --color=always {}")'
 
+# LAZYGIT
+alias lg='lazygit'
